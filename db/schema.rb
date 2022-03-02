@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_02_223921) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_02_224403) do
   create_table "adjective_combos", force: :cascade do |t|
     t.integer "adjectives_id"
     t.integer "combos_id"
@@ -25,6 +25,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_02_223921) do
     t.text "definition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "animal_combos", force: :cascade do |t|
+    t.integer "animals_id"
+    t.integer "combos_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["animals_id"], name: "index_animal_combos_on_animals_id"
+    t.index ["combos_id"], name: "index_animal_combos_on_combos_id"
   end
 
   create_table "animals", force: :cascade do |t|

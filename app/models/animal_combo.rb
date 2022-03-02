@@ -1,0 +1,2 @@
+class AnimalCombo < ApplicationRecord
+end
