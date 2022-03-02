@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_02_224403) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_02_225124) do
   create_table "adjective_combos", force: :cascade do |t|
     t.integer "adjectives_id"
     t.integer "combos_id"
