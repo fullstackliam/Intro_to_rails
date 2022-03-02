@@ -1,0 +1,2 @@
+module WeirdAnimalComboHelper
+end
