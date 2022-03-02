@@ -1,0 +1,2 @@
+class AdjectiveCombo < ApplicationRecord
+end
