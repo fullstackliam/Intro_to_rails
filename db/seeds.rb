@@ -73,5 +73,3 @@ end
   definition.gsub!("]", "")
   Adjective.create(word: fake_positive_adjective, definition: definition)
 end
-
-
