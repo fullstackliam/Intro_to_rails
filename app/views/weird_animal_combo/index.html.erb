@@ -3,7 +3,7 @@
 <p>it's working!@@@!!!</p>
 
 <% if (@combo != nil)%>
-  <%= render 'shared/finishedAnimal' %>
+  <%= render 'shared/finishedAnimal', @combo %>
 <% else%>
   <H2>No records exist</H2>
 <% end %>
